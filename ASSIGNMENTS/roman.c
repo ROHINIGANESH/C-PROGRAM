@@ -25,11 +25,42 @@ else if(str[i]=='L')
 {
 a[i]=50;
 }
+else if(str[i]=='C')
+{
+a[i]=100;
+}
 else
 {
 break;
 }
 }
+if(len==1)
+{
+for(i=0;i<len;i++)
+{
+if(str[i]=='I')
+{
+printf("1");
+}
+else if(str[i]=='V')
+{
+printf("5");
+}
+else if(str[i]=='X')
+{
+printf("10");
+}
+else if(str[i]=='L')
+{
+printf("50");
+}
+else if(str[i]=='C')
+{
+printf("100");
+}
+}
+}
+else{
 for(i=0;i<len-1;i++)
 {
 for(j=1;j<len;j++)
@@ -66,4 +97,5 @@ count++;
 }
 }
 printf("%d",b);
+}
 }
